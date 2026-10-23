@@ -4,7 +4,7 @@
 
 A data analysis project exploring annual water loss audits from California urban retail water systems. I use Python and SQL to examine reported losses, compare reporting coverage over time, and evaluate whether machine learning can improve on a simple next-year baseline.
 
-Developed for **Data Analyst with SQL & Python in Google Platform — Batch 25**.
+Developed for **DQLab Data Analyst with SQL & Python in Google Platform — Batch 25**.
 
 ## Questions
 
