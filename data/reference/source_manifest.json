@@ -1,0 +1,32 @@
+{
+  "retrieval_date": "2026-10-21",
+  "publisher": "California Department of Water Resources",
+  "source_page": "https://data.ca.gov/@california-department-of-water-resources/ca-urban-retail-water-system-water-loss-annual-loss-audit-data",
+  "files": [
+    {
+      "file": "ca-retailer-waterlossdata.csv",
+      "url": "https://data.cnra.ca.gov/dataset/d6cdd89e-49b0-4b1f-86ee-8b7237e5f169/resource/058ac6ca-a8b4-4f28-b6c8-11e48309f3b4/download/ca-retailer-waterlossdata.csv",
+      "sha256": "3b617b0e13a4cc7182f082f5e63e8ecbe64715a6d67a6fbcb53001439f4867ea"
+    },
+    {
+      "file": "data_dictionary.csv",
+      "url": "https://data.cnra.ca.gov/dataset/d6cdd89e-49b0-4b1f-86ee-8b7237e5f169/resource/0d76d9ed-1ef4-4d51-a0d9-9001ec1e9804/download/data_dictionary.csv",
+      "sha256": "614a0d66649acb9b3ae549abafcc216fd7331b59a07d4a028b312cdb1237a0ef"
+    }
+  ],
+  "rows": 4936,
+  "columns": 190,
+  "unique_organization_ids": 441,
+  "rows_by_reporting_end_year": {
+    "2016": 394,
+    "2017": 526,
+    "2018": 547,
+    "2019": 554,
+    "2020": 558,
+    "2021": 548,
+    "2022": 554,
+    "2023": 554,
+    "2024": 549,
+    "2025": 152
+  }
+}

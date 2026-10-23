@@ -1,0 +1,9 @@
+﻿feature,source_period,unit
+water_supplied_af_t,feature_year (t),AF
+real_losses_af_t,feature_year (t),AF
+apparent_losses_af_t,feature_year (t),AF
+non_revenue_water_af_t,feature_year (t),AF
+service_connections_t,feature_year (t),connections
+mains_miles_t,feature_year (t),miles
+real_loss_share_pct_t,feature_year (t),percent
+real_loss_af_per_connection_t,feature_year (t),AF/connection/year

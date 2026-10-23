@@ -1,0 +1,734 @@
+﻿Column,Type,Label,Description
+DWR_ORGANIZATION_ID,numeric,A CA DWR numeric identifier for each water supplier that can be used to connect with other CA DWR datasets.,"Definition: A CA DWR numeric identifier for each water supplier that can be used to connect with other DWR datasets. 2020 data dictionary
+
+Source: CA Department of Water Resources
+
+Additional Notes: Organization Identification Number from 2020 UWMP data dictionary: https://data.cnra.ca.gov/dataset/2020-uwmp-data-export-tables/resource/486f73a7-8938-4996-8708-0515b074710c"
+WATER_SUPPLIER_NAME,text,Name of CA urban retail water supplier,"Definition: The name of the CA urban water supplier -needed for determining audit reportnig requirement and responsibilities. 2020 UWMP data dictionary. DWR Water Supplier Name. 2020 data dictionary: https://data.cnra.ca.gov/dataset/2020-uwmp-data-export-tables/resource/486f73a7-8938-4996-8708-0515b074710c
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+SUBMITTED_DATE,timestamp,Date the report was submitted by the urban retail water supplier,"Definition: Date the Annual Water Loss Report  was uploaded to WUE data portal. Each annual water loss audit report submitted to DWR includes the AWWA FWAS audit (v5 or v6) and the CA DWR validator and utility certification statements (pdf for v5 and excel files to accompany v6).
+
+Source: Ecointeractive
+
+Additional Notes:"
+CONTACT_NAME,text,Name of contact for the water supplier,"Definition: Name of Contact Person entered
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Name of Contact Person. AWWA FWAS V6 tab 'Start Page', Cell AB10."
+CONTACT_EMAIL_ADDRESS,text,Email Address ,"Definition: Email of Contact Person entered
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Email of Contact Person. AWWA FWAS V6 tab 'Start Page', Cell AB11."
+CONTACT_PHONE,text,Phone number of contact,"Definition: Contact Telephone entered -no specific format.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB12."
+CONTACT_PHONE_EXT,text,Telephone extension number for the contact,"Definition: Contact Telephone extension entered-no specific format.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes:  AWWA FWAS V6 tab 'Start Page', Cell AI12."
+SUPPLIER_NAME,text,Name of city/utility entered,"Definition: Name of city/utility 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Name of City/Utility. AWWA FWAS V6 tab 'Start Page', Cell AB9.  For v5 it is on the Instructions tab (v5)"
+CITY_TOWN_MUNICIPALITY,text,Location (City/Town/Municipality) entered ,"Definition: Location (City/Town/Municipality) entered 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB13."
+STATE_PROVINCE,text,State/Province where water system is located.,"Definition: State/Province where water system is located.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB14"
+COUNTRY,text,Country entered,"Definition: Country entered
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB16."
+REPORTING_YEAR,numeric,CA DWR Consultant internal tracking year which may not be accurate due to user error. ,"Definition: CA DWR Consultant internal tracking year which may not be accurate due to user error. Pre 2022: User entered, AWWA defined, Later changed to DWR defined:WUE data portal tracking programmer use only. CA DWR suggest using Start Date for accuracy of audit period (12 months) covered.
+
+Source: Producer Defined
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB18."
+REPORTING_YEAR_TYPE,text,Accounting period of report (Calendar or Financial Year),"Definition: Internal tracking year type which may not be accurate due to user error. Use start and end date instead for accuracy.
+
+Source: Producer Defined
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB19."
+REPORTING_START_DATE,timestamp,Start date of the water loss audit (accounting) period,"Definition: Start of audit period explicity entered in data entry field in v6. For v5, CA DWR calculated this begin date for the audit period based on Year and Year Type entered in AWWA FWAS Instructions tab (v5)/Start Page (v6)
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB20."
+REPORTING_END_DATE,timestamp,End date of the water loss audit (accounting) period,"Definition: End of audit period explicity entered in data entry field in v6. For v5, CA DWR calculated this begin date for the audit period based on Year and Year Type entered in AWWA FWAS Instructions tab (v5)/Start Page (v6)
+
+Source: Producer Defined
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB21."
+AUDIT_PREPARATION_DATE,timestamp,Audit Preparation Date,"Definition: Audit Preparation Date entered
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB17."
+VOLUME_REPORTING_UNITS,text,Volume Reporting units,"Definition: Volume Reporting units
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Start Page', Cell AB22."
+PWS_ID_OR_OTHER_ID,text,"Public water system identification number and other identification, where appropriate. For water loss ausdit submissions purposes, CA DWR (after collaboration with the Water Boards) allows water systems to add a Letter (starting with A,B, etc.) at the end of the PWSID to distinguish between the few water systems that are owned which are not contiguous but have only one PWSID. ","Definition: AWWA audit gives the option for the water system ID used. DWR has notified CA water systems to use the PWSID which is USEPA defined. Format: SSXXXXXXXXXX where: SS = the Federal Information Processing Standard (FIPS) Pub 5-2 State abbreviation in which the water system is located, or the region number of the EPA region responsible for an Indian reservation, and XXXXXXXXXX = the water system identification code assigned by the State. USEPA: Uniquely identifies the water system within a specific state.  For water loss ausdit submissions purposes, CA DWR (after collaboration with the Water Boards) allows water systems to add a Letter (starting with A,B, etc.) at the end of the PWSID to distinguish between the few water systems that are owned which are not contiguous but have only one PWSID. 
+
+Source: USEPA & Department of Water Resources 
+
+Additional Notes: 
+AWWA FWAS V6 tab 'Start Page', Cell AB25."
+WS_OWN_SOURCES_VOL_COMMENT,numeric,Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file,"Definition: This is not an actual audit comment. It is the Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. Optional comment by user to explain how an input value was calculated, or to document sources of the information used.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G10 & H10."
+WS_OWN_SOURCES_VOL,numeric,"The volume of water withdrawn (abstracted) from water resources (rivers, lakes, streams, wells, etc.) controlled by the water utility, and then treated for potable water distribution.","Definition: The volume of water withdrawn (abstracted) from water resources (rivers, lakes, streams, wells, etc.) controlled by the water utility, and then treated for potable water distribution.  Most water audits are compiled for utility retail water distribution systems, so this volume should reflect the amount of treated drinking water that entered the distribution system.  Often the volume of water measured at the effluent of the treatment works is slightly less than the volume measured at the raw water source, since some of the water is used in the treatment process.  Thus, it is useful if flows are metered at the effluent of the treatment works.  If metering exists only at the raw water source, an adjustment for water used in the treatment process should be included to account for water consumed in treatment operations such as filter backwashing, basin flushing and cleaning, etc.  If the audit is conducted for a wholesale water agency that sells untreated water, then this quantity reflects the measure of the raw water, typically metered at the source.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H15."
+WS_OWN_SOURCES_VOL_AF,numeric,Amount of water supplied From water supplier's own sources of water in acre-feet,"Definition: Conversion of variable named WS_OWN_SOURCES_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H15. No conversion if the user chose AF as their units instead of MG"
+WS_OWN_SOURCES_ERR_COMMENT,numeric,This is not an actual audit comment. It is the Data Validity Grade associated with this attribute/variable,"Definition: This is not an actual audit comment. It is the Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.User can also enter optional comment to explain how an input value was calculated, or to document sources of the information used.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G13 & H13."
+WS_OWN_SOURCES_ERR_ADJ_TYPE,text,"The type of estimate or measure of the degree of inaccuracy entered that exists in the master (production) meters measuring the annual Volume from own Sources, and any error in the data trail that exists to collect, store and report the summary production data.","Definition: An estimate or measure of the degree of inaccuracy that exists in the master (production) meters measuring the annual Volume from own Sources, and any error in the data trail that exists to collect, store and report the summary production data.  This adjustment is a weighted average number that represents the collective error for all master meters for all days of the audit year and any errors identified in the data trail.  Meter error can occur in different ways.  A meter or meters may be inaccurate by under-registering flow (did not capture all the flow), or by over-registering flow (overstated the actual flow).  Data error can occur due to data gaps caused by temporary outages of the meter or related instrumentation.  All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P15."
+WS_OWN_SOURCES_ERR_PERCENT,numeric,Degree of inaccuracy in master meters and data errors in archival systems (entered as a percent). A percent adjustment to water supplied from own sources due to known errors associated with the estimate ,"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O15. Note: if ""under-registration"" selected in cell T15, then this percentage is treated as a negative number."
+WS_OWN_SOURCES_ERR_VOL,numeric,Degree of inaccuracy in master meters and data errors in archival systems (entered as a volume). A volume adjustment to water supplied from own sources due to known errors associated with the estimate ,"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell AA15."
+WS_OWN_SOURCES_ERR_VOL_AF,numeric,Conversion of variable WS_OWN_SOURCES_ERR_VOL to acre-feet.,"Definition: Conversion of variable named WS_OWN_SOURCES_ERR_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell AA15.  Convesion of variable to units of acre-feet."
+WS_IMPORTED_VOL_COMMENT,numeric,"Optional comment by user  to explain how Water Imported was calculated, or to document sources of the information used.","Definition: This is not an actual audit comment.  The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. The optional comment by user can be used to explain how Water Imported was calculated, or to document sources of the information used.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G16 & H16."
+WS_IMPORTED_VOL,numeric,The Water Imported volume is the bulk water purchased to become part of the Water Supplied volume. ,"Definition: The Water Imported volume is the bulk water purchased to become part of the Water Supplied volume. Typically this is water purchased from a neighboring water utility or regional water wholesale supplier, and is metered at the custody transfer point of interconnection between the two water utilities. Usually the meter(s) are owned by the water supplier selling the water to the utility conducting the water audit. The water supplier selling the bulk water usually charges the receiving utility based upon a wholesale water rate.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H16."
+WS_IMPORTED_VOL_AF,numeric,Water supplied amount of water supplied to the water supplier by Another Supplier in Acre-Feet,"Definition: Conversion of variable named WS_IMPORTED_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H16."
+WS_IMPORTED_ERR_COMMENT,numeric,Data Validity Grade associated with this attribute/variable. Note: The comment can be found in the FWAS audit excel file,"Definition: This is not an actual audit comment.  It is the Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. Optional comment by user to explain how an input value was calculated, or to document sources of the information used.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G19 & H19."
+WS_IMPORTED_ERR_ADJ_TYPE,text,An estimate or measure of the volume in which the Water Imported volume is incorrect.,"Definition: An estimate or measure of the volume in which the Water Imported volume is incorrect.  This adjustment is a weighted average that represents the collective error for all of the metered and archived imported flow for all days of the audit year.  Meter error can occur in different ways.  A meter may be inaccurate by under-registering flow (did not capture all the flow), or by over-registering flow (overstated the actual flow).  Error in the metered, archived data can also occur due to data gaps caused by temporary outages of the meter or related instrumentation.  All water utilities encounter some level of meter inaccuracy, particularly if meters are aged and infrequently tested.  Occasional errors also occur in the archived metered data.  Thus, a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.  If regular meter accuracy testing is conducted on the meter(s) - which is usually conducted by the water utility selling the water - then the results of this testing can be used to help quantify the meter error adjustment.  
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P16."
+WS_IMPORTED_ERR_PERCENT,numeric,Degree of inaccuracy in master meters and data errors in archival systems (entered as a percent),"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration. Note: if ""under-registration"" selected in cell T15, then this percentage is treated as a negative number.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O16."
+WS_IMPORTED_ERR_VOL,numeric,Degree of inaccuracy in master meters and data errors in archival systems (entered as a volume),"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell AA16."
+WS_IMPORTED_ERR_VOL_AF,numeric,A volume adjustment made to water supplied from imported water due to known errors associated with the estimate ,"Definition: Conversion  of variable named WS_IMPORTED_ERR_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell AA16."
+WS_EXPORTED_VOL_COMMENT,numeric,Data Validity Grade associated with this attribute/variable. Note: The comment can be found in the FWAS audit excel file,"Definition: This is not an actual audit comment.  It is the Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: Producer Defined
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G22 & H22."
+WS_EXPORTED_VOL,numeric,The Water Exported volume is the bulk water conveyed and sold by the water utility to neighboring water systems that exists outside of their service area.,"Definition: The Water Exported volume is the bulk water conveyed and sold by the water utility to neighboring water systems that exists outside of their service area.  Typically this water is metered at the custody transfer point of interconnection between the two water utilities.  Usually the meter(s) are owned by the water utility that is selling the water: i.e. the exporter.  If the water utility who is compiling the annual water audit sells bulk water in this manner, they are an exporter of water.
+
+Note: The Water Exported volume is sold to wholesale customers who are typically charged a wholesale rate that is different than retail rates charged to the retail customers existing within the service area.  Many state regulatory agencies require that the Water Exported volume be reported to them as a quantity separate and distinct from the retail customer billed consumption.  For these reasons - and others - the Water Exported volume is always quantified separately from Billed Authorized Consumption in the standard water audit.  Be certain not to ""double-count"" this quantity by including it in both the Water Exported box and the Billed Metered Consumption box of the water audit Reporting Worksheet.  This volume should be included only in the Water Exported box.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H17."
+WS_EXPORTED_VOL_AF,numeric,Amount of water supply exported to another water supplier in acre-feet,"Definition: Conversion of variable named WS_EXPORTED_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H17."
+WS_EXPORTED_ERR_COMMENT,numeric,Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file,"Definition: This is not an actual audit comment.  It is the Data Validity Grade associated with this attribute/variable. The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. Optional comment by user to explain how an input value was calculated, or to document sources of the information used.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G25 & H25."
+WS_EXPORTED_ERR_ADJ_TYPE,text,Grade entered by user. ,"Definition: Grade entered by user. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P17."
+WS_EXPORTED_ERR_PERCENT,numeric, Degree of inaccuracy in master meters and data errors in archival systems for exported water (entered as a percent).,"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration. Note: if ""under-registration"" selected in cell T15, then this percentage is treated as a negative number.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V5 tab 'Reporting Worksheet', Cell L17."
+WS_EXPORTED_ERR_VOL,numeric, Degree of inaccuracy in master meters and data errors in archival systems for exported water (entered as a volume).,"Definition: All water utilities encounter some degree of inaccuracy in master meters and data errors in archival systems are common; thus a value of zero should not be entered.  Enter a negative percentage or value for metered data under-registration; or, enter a positive percentage or value for metered data over-registration.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell AA17."
+WS_EXPORTED_ERR_VOL_AF,numeric,A volume adjustment made to water supply exported water due to known errors associated with the estimate ,"Definition: Conversion of variable named to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+WS_WATER_SUPPLIED_VOL,numeric,The annual volume of water delivered to the distribution system. ,"Definition: The annual volume of water delivered to the distribution system. This equals Volume from Own Sources plus Water Imported minus the Water Exported volume.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: FWAS spreadsheet calculation. AWWA FWAS V6 tab 'Worksheet', Cell H19."
+WS_WATER_SUPPLIED_VOL_AF,numeric,Total amount of water supplied by the water supplier in acre-feet,"Definition: Conversion of variable named WS_WATER_SUPPLIED_VOL  to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H19. No conversion if the user chose AF as their units instead of MG"
+AC_BILL_METER_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. All metered consumption which is billed to retail customers, including all groups of customers such as domestic, commercial, industrial or institutional.  It does NOT include water supplied to neighboring utilities (water exported) which is metered and billed.  Be sure to subtract any consumption for exported water sales that may be included in these billing roles.  Water supplied as exports to neighboring water utilities should be included only in the Water Exported component.  The metered consumption data can be taken directly from billing records for the water audit period.  The accuracy of yearly metered consumption data can be refined by including an adjustment to account for customer meter reading lag time since not all customer meters are read on the same day of the meter reading period.  However additional analysis is necessary to determine the lag time adjustment value, which may or may not be significant.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes:"
+AC_BILL_METER_VOL,numeric,Authorized Consumption that is metered and billed by the water supplier. It does NOT include water supplied to neighboring utilities (Water Exported).,"Definition: All metered consumption which is billed to retail customers, including all groups of customers such as domestic, commercial, industrial or institutional.  It does NOT include water supplied to neighboring utilities (water exported) which is metered and billed.  Be sure to subtract any consumption for exported water sales that may be included in these billing roles.  Water supplied as exports to neighboring water utilities should be included only in the Water Exported component.  The metered consumption data can be taken directly from billing records for the water audit period.  The accuracy of yearly metered consumption data can be refined by including an adjustment to account for customer meter reading lag time since not all customer meters are read on the same day of the meter reading period.  However additional analysis is necessary to determine the lag time adjustment value, which may or may not be significant.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Notes', Cell G28 & H28."
+AC_BILL_METER_VOL_AF,numeric,Authorized Consumption that is metered and billed by the water supplier in acre-feet,"Definition: Conversion of variable named AC_BILL_METER_VOL  to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H23. No conversion if the user chose AF as their units instead of MG"
+AC_BILL_UNMETER_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. All billed consumption which is calculated based on estimates or norms from water usage sites that have been determined by utility policy to be left unmetered. This is typically a very small component in systems that maintain a policy to meter their customer population. However, this quantity can be the key consumption component in utilities that have not adopted a universal metering policy. This component should NOT include any water that is supplied to neighboring utilities (water exported) which is unmetered but billed. Water supplied as exports to neighboring water utilities should be included only in the Water Exported component.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading' cell D177"
+AC_BILL_UNMETER_VOL,numeric,The part of the billed Authorized Consumption volume that is calculated based on estimates or norms from water usage.,"Definition: All billed consumption which is calculated based on estimates or norms from water usage sites that have been determined by utility policy to be left unmetered. This is typically a very small component in systems that maintain a policy to meter their customer population. However, this quantity can be the key consumption component in utilities that have not adopted a universal metering policy. This component should NOT include any water that is supplied to neighboring utilities (water exported) which is unmetered but billed. Water supplied as exports to neighboring water utilities should be included only in the Water Exported component.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H24."
+AC_BILL_UNMETER_VOL_AF,numeric,The part of the billed Authorized Consumption volumes that are calculated based on estimates or norms from water usage in acre-feet.,"Definition: Conversion of variable named AC_BILL_UNMETER_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H24."
+AC_UNBILL_METER_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. Unbilled authorized consumption occurs typically in non-account uses, including water for fire fighting and training, flushing of water mains and sewers, street cleaning, watering of municipal gardens, public fountains, or similar public-minded uses. Occasionally these uses may be metered and billed (or charged a flatfee), but usually they are unmetered and unbilled. In the latter case, the water auditor may use a default value to estimate this quantity, or implement procedures for the reliable quantification of these uses. This starts with documenting usage events as they occur and estimating the amount of water used in each event. (See Unbilled Unmetered Authorized Consumption)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading' cell D224"
+AC_UNBILL_METER_VOL,numeric,Authorized Consumption that is Metered but not billed by the Water Supplier for some reason,"Definition: Un-billed authorized consumption occurs typically in non-account uses, including water for fire fighting and training, flushing of water mains and sewers, street cleaning, watering of municipal gardens, public fountains, or similar public-minded uses. Occasionally these uses may be metered and billed (or charged a flat fee), but usually they are unmetered and unbilled. In the latter case, the water auditor may use a default value to estimate this quantity, or implement procedures for the reliable quantification of these uses. This starts with documenting usage events as they occur and estimating the amount of water used in each event. (See Unbilled Unmetered Authorized Consumption)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H25."
+AC_UNBILL_METER_VOL_AF,numeric,Authorized Consumption in acre-feet that is Metered but not billed by the Water Supplier for some reason,"Definition: Conversion of variable named AC_UNBILL_METER_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+AC_UNBILL_UNMETER_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O26."
+AC_UNBILL_UNMETER_VOL,numeric,Authorized Consumption that is neither billed nor metered. ,"Definition: Any kind of Authorized Consumption which is neither billed nor metered. This component typically includes water used in activities such as fire fighting, flushing of water mains and sewers, street cleaning, fire flow tests conducted by the water utility, etc. In most water utilities it is a small component. This component does NOT include water supplied to neighboring utilities (water exported) which is unmetered and unbilled - an unlikely case. Also, if any potable water used at a water reatment plant is tapped from a location upstream of the meter(s) used to determine the Volume from Own Sources in the audit, this is outside of the boundary of the audit and should therefore not be included as part of Unbilled, Unmetered Authorized Consumption. This component has many sub-components of water use which may not yet be quantified. The default is 0.25% of the Billed Authorized Consumption volume (BMAC + BUAC), and is recommended for temporary use if customized estimates are not yet available, with recommendation to begin tracking and estimating these volumes for the next audit. Note that a value of zero is not permitted, since all water utilities likely have some volume of water in this component occurring in their system. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H26."
+AC_UNBILL_UNMETER_VOL_AF,numeric,Any kind of authorized consumption that is neither billed nor metered. Converted to acre-feet,"Definition: Conversion of Authorized Consumption which is neither billed nor metered  (variable AC_UNBILL_UNMETER_VOL) to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H26. No conversion if the user chose AF as their units instead of MG"
+AC_UNBILL_UNMETER_ERR_ADJ_TYPE,text,Indicates if the error adjustment (variable AC_UNBILL_UNMETER_ERR_VOL) is a custom value or user selected the default value.,"Definition: Indicates if the error adjustment (variable AC_UNBILL_UNMETER_ERR_VOL) is a custom value or user selected the default value. Refer to the latest AWWA M36 Manual for additional discussion and guidance. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P26."
+AC_UNBILL_UNMETER_ERR_PERCENT,numeric,Audit input if Error adjustment is being calculated as a percent,"Definition: If an Error Adjustment input is being calculated as a percent, some very general guidance for calculating each error source (described also in definition for AC_UNBILL_UNMETER_ERR_ADJ_TYPE) is provided. The auditor is again cautioned that each specific water supply setup needs to be evaluated closely as noted in the Disclaimer. Refer to the latest AWWA M36 Manual for additional discussion and guidance on this matter.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O26."
+AC_UNBILL_UNMETER_ERR_VOL,numeric,Audit input if Error adjustment is being calculated as a volume,"Definition: If an Error Adjustment input is being calculated as a volume, each source of error (described in definition for AC_UNBILL_UNMETER_ERR_PERCENT) may be separately calculated, with careful consideration of under- vs over-registration, then added together to determine the composite volume to input. The composite input should be entered on the Worksheet as a positive number, then under- or over-registration selected on the adjacent dropdown.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell Q26."
+AC_UNBILL_UNMETER_ERR_VOL_AF,numeric,"A volume adjustment made to unbilled, unmetered water due to known errors associated with the estimate ","Definition: Conversion  of variable named AC_UNBILL_UNMETER_ERR_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell Q26. No conversion if the user chose AF as their units instead of MG"
+AC_AUTH_CONSUMPTION_VOL,numeric,Total Authorized Consumption (volume),"Definition: Authorized Consumption equals billed metered + billed unmetered + unbilled metered + unbilled unmetered consumption. The volume of metered and/or unmetered water taken by registered customers, the water utility's own uses, and uses of others who are implicitly or explicitly authorized to do so by the water utility; for residential, commercial, industrial and public-minded purposes.
+Typical retail customers' consumption is tabulated usually from established customer accounts as billed metered consumption, or - for unmetered customers - billed unmetered consumption. These types of consumption, along with billed water exported, provide revenue potential for the water utility. Typically a lag will exist between timing for reading of supply meters and reading of customer meters. A lag-time correction should typically be calculated to account for this. Be certain to tabulate the water exported volume as a separate component and do not ""double-count"" it by including in the billed metered consumptioncomponent as well as the water exported component.
+Unbilled authorized consumption occurs typically in non-account uses, including water for fire fighting and training, flushing of water mains and sewers, street cleaning, watering of municipal gardens, public fountains, or similar public-minded uses. Occasionally these uses may be metered and billed (or charged a flat fee), but usually they are unmetered and unbilled. In the latter case, the water auditor may use a default value to estimate this quantity, or implement procedures for the reliable quantification of these uses. This starts with documenting usage events as they occur and estimating the amount of water used in each event. (See Unbilled Unmetered Authorized Consumption).
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H30."
+AC_AUTH_CONSUMPTION_VOL_AF,numeric,Total Authorized Consumption (volume) in acre-feet,"Definition: Conversion of variable named AC_AUTH_CONSUMPTION_VOL  to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H30. No conversion if the user chose AF as their units instead of MG."
+WL_UNAUTH_CONS_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading' cell D322"
+WL_UNAUTH_CONS_VOL,numeric,"Water illegally withdrawn from fire hydrants, illegal connections, bypasses to customer consumption meters, or tampering with metering or meter reading equipment; as well as any other ways to receive water while thwarting the water utility's ability to collect revenue for the water (entered as a volume)","Definition: Includes water illegally withdrawn from fire hydrants, illegal connections, bypasses to customer consumption meters, or tampering with metering or meter reading equipment; as well as any other ways to receive water while thwarting the water utility's ability to collect revenue for the water. Unauthorized consumption results in uncaptured revenue and creates an error that understates customer consumption. In most water utilities this volume is low and, if the water auditor has not yet gathered detailed data for these loss occurrences, it is recommended to use the default value of 0.25% of the Billed Authorized Consumption volume. However, if the auditor has investigated unauthorized occurrences, and has well validated data that indicates the volume from unauthorized consumption is substantially higher or lower than that generated by the default value, then the auditor should enter a quantity that was derived from the utility investigations. Note that a value of zero will not be accepted since all water utilities tend to have some volume of unauthorized consumption occurring in their system.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H43."
+WL_UNAUTH_CONS_VOL_AF,numeric,Conversion of variable named WL_UNAUTH_CONS_VOL to units of acre-feet,"Definition: Conversion of variable named WL_UNAUTH_CONS_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H43."
+WL_UNAUTH_CONS_ERR_ADJ_TYPE,numeric,Indicates if the error adjustment (variable WL_UNAUTH_CONS_ERR_VOL) is a custom value or default value. ,"Definition: Indicates if the error adjustment (variable WL_UNAUTH_CONS_ERR_VOL) is a custom value or default value. Refer to the latest AWWA M36 Manual for additional discussion and guidance. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P44."
+WL_UNAUTH_CONS_ERR_PERCENT,numeric,"If an Error Adjustment input is being calculated as a percent, some very general guidance for calculating each error source is provided.","Definition: If an Error Adjustment input is being calculated as a percent, some very general guidance for calculating each error source is provided. The auditor is again cautioned that each specific water supply setup needs to be evaluated closely as noted in the Disclaimer. Refer to the latest AWWA M36 Manual for additional discussion and guidance on this matter.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O44."
+WL_UNAUTH_CONS_ERR_VOL,numeric,"If an Error Adjustment input is being calculated as a volume, each source of error (described in definition for variable WL_UNAUTH_CONS_ERR_PERCENT) may be separately calculated, with careful consideration of under- vs over-registration, then added together to determine the composite volume to input. ","Definition: If an Error Adjustment input is being calculated as a volume, each source of error (described in definition for variable WL_UNAUTH_CONS_ERR_PERCENT) may be separately calculated, with careful consideration of under- vs over-registration, then added together to determine the composite volume to input. The composite input should be entered on the Worksheet as a positive number, then under- or over-registration selected on the adjacent dropdown.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V5 tab ' Reporting Worksheet', Cell N38."
+WL_UNAUTH_CONS_ERR_VOL_AF,numeric,Conversion of variable named WL_UNAUTH_CONS_ERR_VOL to units of acre-feet,"Definition: Conversion of variable named WL_UNAUTH_CONS_ERR_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+WL_CUST_MTR_INACC_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading' Cell D300"
+WL_CUST_MTR_INACC_VOL,numeric,Apparent water losses caused by the collective under-registration of customer water meters. ,"Definition: Apparent water losses caused by the collective under-registration of customer water meters. Many customer water meters gradually wear as large cumulative volumes of water are passed through them over time. This causes the meters to under-register the flow of water. This occurrence is common with smaller residential meters of sizes 5/8-inch and 3/4 inch after they have registered very large cumulative volumes of water, which generally occurs only after periods of years. For meters sized 1-inch and larger - typical of multi-unit residential, commercial, institutional and industrial accounts - meter under-registration can occur from wear or from the improper application of the meter; i.e. installing the wrong type of meter or the wrong size of meter, for the flow pattern (profile) of the consumer. For instance, many larger meters have reduced accuracy at low flows. If an oversized meter is installed, most of the time the routine flow will occur in the low flow range of the meter, and a significant portion of it may not be registered. It is important to properly select and install all meters, but particularly large customer meters, size 1-inch and larger.
+
+
+Source: merican Water Works Association v6 audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H41."
+WL_CUST_MTR_INACC_VOL_AF,numeric,Conversion of variable named WL_CUST_MTR_INACC_VOL to units of acre-feet,"Definition: Conversion of variable named WL_CUST_MTR_INACC_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+WL_CUST_MTR_INACC_ERR_ADJ_TYPE,text,Customer meter inaccuracy type. User specifies if number entred is a a percent or volume.,"Definition: Customer meter inaccuracy type. User specifies if number entred is a a percent or volume.
+
+Source: merican Water Works Association v6 audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P41."
+WL_CUST_MTR_INACC_ERR_PERCENT,numeric,"The auditor has two options for entering data for this component of the audit. The auditor can enter a percentage under-registration (typically an estimated value), this will apply the selected percentage to the two categories of metered consumption to determine the volume of water not recorded due to customer meter inaccuracy. ","Definition: The auditor has two options for entering data for this component of the audit. The auditor can enter a percentage under-registration (typically an estimated value), this will apply the selected percentage to the two categories of metered consumption to determine the volume of water not recorded due to customer meter inaccuracy. Note that this percentage is a composite average inaccuracy for all customer meters in the entire meter population. The percentage will be multiplied by the sum of the volumes in the Billed Metered and Unbilled Metered components. Note that a value of zero will be accepted but is not recommended, as all metered systems tend to have some degree of inaccuracy. A positive value should be entered. A value of zero in this component is generally valid only if the water utility does not meter its customer population. The formula for caculating a volume of CMI from a percentage input is as follows: CMI volume = (BMAC+UMAC)/(1-CMI%)-(BMAC+UMAC)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O41."
+WL_CUST_MTR_INACC_ERR_VOL,numeric,"The auditor has two options for entering data for this component of the audit. If the auditor has substantial data from meter testing activities, he or she can calculate their own loss volumes, and this volume may be entered directly.","Definition: The auditor has two options for entering data for this component of the audit. If the auditor has substantial data from meter testing activities, he or she can calculate their own loss volumes, and this volume may be entered directly. Note that a value of zero will be accepted but is not recommended, as all metered systems tend to have some degree of inaccuracy. A positive value should be entered. A value of zero in this component is generally valid only if the water utility does not meter its customer population. The formula for caculating a volume of CMI from a percentage input is as follows: CMI volume = (BMAC+UMAC)/(1-CMI%)-(BMAC+UMAC)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H41."
+WL_CUST_MTR_INACC_ERR_VOL_AF,numeric,"Conversion of variable named WL_CUST_MTR_INACC_ERR_VOL to units of acre-feet. This is equivalent to ""WL_CUST_MTR_INACC_VOL"".  There is no 'error' adjustment for CUST_MTR_INACC","Definition: Conversion of variable named WL_CUST_MTR_INACC_ERR_VO to units of acre-feet. This is equivalent to ""WL_CUST_MTR_INACC_VOL"".  There is no 'error' adjustment for CUST_MTR_INACC
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H41."
+WL_SYS_DATA_ERR_VOL_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading', cell D271"
+WL_SYS_DATA_ERR_VOL,numeric,"Apparent losses caused by accounting omissions, errant computer programming, gaps in policy, procedure, and permitting/activation of new accounts. Negative or zero values are not allowed for this audit component.","Definition: Apparent losses caused by accounting omissions, errant computer programming, gaps in policy, procedure, and permitting/activation of new accounts; and any type of data lapse that results in under-stated customer water consumption in summary billing reports. Systematic Data Handling Errors occur as a customer consumption volume and can result in a direct loss of revenue potential. Water utilities can find ""lost"" revenue by keying on this component. Utilities typically measure water consumption volumes registered by water meters at customer premises. The meter should be read routinely (ex: monthly) and the data transferred to the Customer Billing System, which generates and sends a bill to the customer. Data Transfer Errors result in the registered consumption volume value being less than the actual consumption volume, creating an apparent loss. Such error might occur from illegible and mis-recorded hand-written readings compiled by meter readers, inputting an incorrect meter register unit conversion factor in the automatic meter reading equipment, or a variety of similar errors. Apparent losses also occur from Data Analysis Errors in the archival and data reporting processes of the Customer Billing System. Inaccurate estimates used for accounts that fail to produce a meter reading are a common source of error. Billing adjustments may award customers a rightful monetary credit, but do so by creating a negative value of consumption volume, thus under-stating the actual consumption. Account activation lapses may allow new buildings to begin using water for months without meter readings and billing. Poor permitting and construction inspection practices can result in a new building water service commencing without a billing account, a water meter and meter reading; i.e., the customer is unknown to the utility's billing system. Close auditing of the permitting, metering, meter reading, billing and reporting processes of the water consumption data trail can uncover data management gaps that create volumes of systematic data handling error. Utilities should routinely analyze customer billing records to detect data anomalies and quantify these losses. For example, a billing account that registers zero consumption for two or more billing cycles should be checked to explain why usage has seemingly halted. Given the revenue loss impacts of these losses, water utilities are well-justified in providing continuous oversight and timely correction of data transfer errors & data handling errors. If the water auditor has not yet gathered detailed data or assessment of systematic data handling error, it is recommended that the auditor apply the default value of 0.25% of the Billed Authorized Consumption volume. However, if the auditor has investigated the billing system and its controls, and has well validated data that indicates the volume from systematic data handling error is substantially higher or lower than that generated by the default value, then the auditor should enter a quantity that was derived from the utility investigations and select an appropriate grading. Negative or zero values are not allowed for this audit component.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H39."
+WL_SYS_DATA_ERR_VOL_AF,numeric,Conversion of variable named WL_SYS_DATA_ERR_VOL to units of acre-feet,"Definition: Conversion of variable named WL_SYS_DATA_ERR_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H39."
+WL_SYS_DATA_ERR_ERR_ADJ_TYPE,text,Indicates if the error adjustment (variable WL_SYS_DATA_ERR_ERR_VOL) is a custom value or default value. Refer to the latest AWWA M36 Manual for additional discussion and guidance. ,"Definition: Indicates if the error adjustment (variable WL_SYS_DATA_ERR_ERR_VOL) is a custom value or default value. Refer to the latest AWWA M36 Manual for additional discussion and guidance. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell P39."
+WL_SYS_DATA_ERR_ERR_PERCENT,numeric,"Result of assessment of systematic data handling error, expressed as a percent. ","Definition: If the water auditor has not yet gathered detailed data or assessment of systematic data handling error, it is recommended that the auditor apply the default value of 0.25% of the Billed Authorized Consumption volume. However, if the auditor has investigated the billing system and its controls, and has well validated data that indicates the volume from systematic data handling error is substantially higher or lower than that generated by the default value, then the auditor should enter a quantity that was derived from the utility investigations and select an appropriate grading. Negative or zero values are not allowed for this audit component.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell O39."
+WL_SYS_DATA_ERR_ERR_VOL,numeric,"If an Error Adjustment input is being calculated as a volume, each source of error (described also in definition for varioable WL_SYS_DATA_ERR_ERR_PERCENT) may be separately calculated, with careful consideration of under- vs over-registration, then added together to determine the composite volume to input. The composite input should be entered on the Worksheet as a positive number, then under- or over-registration selected on the adjacent dropdown.","Definition: If an Error Adjustment input is being calculated as a volume, each source of error (described also in definition for varioable WL_SYS_DATA_ERR_ERR_PERCENT) may be separately calculated, with careful consideration of under- vs over-registration, then added together to determine the composite volume to input. The composite input should be entered on the Worksheet as a positive number, then under- or over-registration selected on the adjacent dropdown.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V5 tab 'Reporting Worksheet', Cell N43"
+WL_SYS_DATA_ERR_ERR_VOL_AF,numeric,Conversion of variable named WL_SYS_DATA_ERR_ERR_VOL to units of acre-feet,"Definition: Conversion of variable named WL_SYS_DATA_ERR_ERR_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell Q39."
+WL_APPARENT_LOSSES_VOL,numeric,"Apparent Losses include all types of inaccuracies associated with customer metering (worn meters as well as improperly sized meters or wrong type of meter for the water usage profile) as well as systematic data handling errors (meter reading, billing, archiving and reporting), plus unauthorized consumption (theft or illegal use). ","Definition: Apparent Losses are calculated as systematic data handling errors + customer metering inaccuracies + unauthorized consumption. Apparent Losses include all types of inaccuracies associated with customer metering (worn meters as well as improperly sized meters or wrong type of meter for the water usage profile) as well as systematic data handling errors (meter reading, billing, archiving and reporting), plus unauthorized consumption (theft or illegal use). NOTE: Over-estimation of Apparent Losses results in under-estimation of Real Losses. Under-estimation of Apparent Losses results in over-estimation of Real Losses.= systematic data handling errors + customer metering inaccuracies + unauthorized consumption.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H46."
+WL_APPARENT_LOSSES_VOL_AF,numeric,Estimated apparent water losses in acre-feet,"Definition: Conversion of variable named WL_APPARENT_LOSSES_VOL WL_APPARENT_LOSSES_VOL to units of acre-feet.
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H46."
+WL_REAL_LOSSES_VOL,numeric,"
+The annual volume lost through all types of leaks, breaks and overflows depends on frequencies, flow rates, and average duration of individual leaks, breaks and overflows.
+","Definition: Physical water losses from the pressurized system (water mains and customer service connections) and the utilityâ€™s storage tanks, up to the point of customer consumption. In metered systems this is the customer meter, in unmetered situations this is the first point of consumption (stop tap/tap) within the property.
+The annual volume lost through all types of leaks, breaks and overflows depends on frequencies, flow rates, and average duration of individual leaks, breaks and overflows.
+
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H51."
+WL_REAL_LOSSES_VOL_AF,numeric,Estimated real water losses in acre-feet,"Definition: Conversion of variable named WL_REAL_LOSSES_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H51."
+WL_WATER_LOSSES_VOL,numeric,Water Losses are calculated as Apparent Losses plus Real Losses.  Water Losses are the difference between water supplied and authorized consumption. ,"Definition: Water Losses are calculated as Apparent Losses plus Real Losses. Water Losses are the difference between water supplied and authorized consumption. Water Losses can be considered as a total volume for The whole system, or for partial systems such as transmission systems, pressure zones or district metered areas (DMA), if one of these configurations are The basis of The water audit.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H53."
+WL_WATER_LOSSES_VOL_AF,numeric,Estimated total water water losses in acre-feet,"Definition: Conversion of variable named WL_WATER_LOSSES_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H53."
+NRW_NON_REVENUE_WATER_VOL,numeric,Estimated Non Revenue Water volume,"Definition: Non Revenue Water = Apparent Losses +real Losses +unbilled metered consumption +unbilled unmetered Consumption. This is water which does not provide revenue potential to The utility.""
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H57."
+NRW_NON_REVENUE_WATER_VOL_AF,numeric,Conversion  of variable NON_REVENUE_WATER_VOL to units of acre-feet,"Definition: Conversion  of variable NON_REVENUE_WATER_VOL to units of acre-feet
+
+Source: CA Department of Water Resources
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H57."
+SD_LENGTH_MAINS_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Alexa changed 5/7/2025: AWWA FWAS V6 tab 'Interactive Data Grading', Cell D350"
+SD_LENGTH_MAINS_MILES,numeric,Estimated length of all pipelines (except service connections) in the system starting from the point of system input metering (for example at the outlet of the treatment plant).,"Definition: Length of all pipelines (except service connections) in the system starting from the point of system input metering (for example at the outlet of the treatment plant). It is also recommended to include in this measure the total length of fire hydrant lead pipe. Hydrant lead pipe is the pipe branching from the water main to the fire hydrant. Fire hydrant leads are typically of a sufficiently large size that is more representative of a pipeline than a service connection. The average length of hydrant leads across the entire system can be assumed if not known, and multiplied by the number of fire hydrants in the system, which can also be assumed if not known. This value can then be added to the total pipeline length. Total length of mains can therefore be calculated as: Length of Mains, miles = (total pipeline length, miles) + [ {(average fire hydrant lead length, ft) x (number of fire hydrants)} / 5,280 ft/mile ] or Length of Mains, kilometres = (total pipeline length, kilometres) + [ {(average fire hydrant lead length, metres) x (number of fire hydrants)} / 1,000 metres/kilometre ]
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H61."
+SD_NUM_SERVICE_CONN_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading', Cell D374"
+SD_NUM_SERVICE_CONN,numeric,Estimated number of water service connections,"Definition: Number of customer service connections, extending from the water main to supply water to a customer. This includes the actual number of pressurized piping connections, including fire connections, whether active or inactive. This may differ substantially from the number of customers (or number of accounts).
+Note: this number does not include the pipeline leads to fire hydrants. The total length of piping supplying fire hydrants should be included in the ""Length of mains"" input, and excluded from the Number of service connections input.
+
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H62."
+SD_SERVICE_CON_DENSITY,numeric,Service connection density=number of customer service connections / length of mains,"Definition: Service connection density=number of customer service connections / length of mains
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H63."
+SD_CUST_MTR_CURB_PROP_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: If the customer water meter exists near the ownership transfer point (usually the curb stop located between the water main and the customer premises) this distance is zero because the meter and transfer point are the same. This is the often encountered configuration of customer water meters located in an underground meter box or ""pit"" outside of the customer's building. The Free Water Audit Software asks a ""Yes/No"" question about the meter at this location. If the auditor selects ""Yes"" then this distance is set to zero and the data grading score for this component is set to 10.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading', Cell D422"
+SD_CUST_MTR_CURB_PROP_YES_NO,text,Question asking if customer meters are typically located at the curbstop/property line. Yes/No Answer.,"Definition: Question asking if customer meters are typically located at the curbstop/property line. Yes/No Answer. If the customer water meter exists near the ownership transfer point (usually the curb stop located between the water main and the customer premises) this distance is zero because the meter and transfer point are the same. This is the often encountered configuration of customer water meters located in an underground meter box or ""pit"" outside of the customer's building. The Free Water Audit Software asks a ""Yes/No"" question about the meter at this location. If the auditor selects ""Yes"" then this distance is set to zero and the data grading score for this component is set to 10.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H65."
+SD_AVG_OPER_PRESSURE_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading', Cell D422"
+SD_AVG_OPER_PRESSURE_PSI,numeric,Estimated average water operating service pressure in pounds per square inch,"Definition: This is the average pressure in the distribution system that is the subject of the water audit (in pounds per square inch). If the water utility is compiling the water audit for the first time, the average pressure can be approximated, but with a low data grading. In subsequent years of auditing, effort should be made to improve the accuracy of the average pressure quantity. This will then qualify the value for a higher data grading.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H68."
+CD_TOTAL_ANNUAL_COST_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes:"
+CD_TOTAL_ANNUAL_COST,numeric," Total Annual Cost for operations, maintenance and any annually incurred costs for long-term upkeep of the drinking water supply and distribution system.  Still required in California. ","Definition: Total Annual Cost. Auditors are welcome to continue to track this input as desired.(* Still required in California though this input has been made optional in version 6, as it is no longer used in calculating a Performance Indicator). These costs include those for operations, maintenance and any annually incurred costs for long-term upkeep of the drinking water supply and distribution system. It should include the costs of day-to-day upkeep and long-term financing such as repayment of capital bonds for infrastructure expansion or improvement. Typical costs include employee salaries and benefits, materials, equipment, insurance, fees, administrative costs and all other costs that exist to sustain the drinking water supply. Depending upon water utility accounting procedures or regulatory agency requirements, it may be appropriate to include depreciation in the total of this cost. This cost should not include any costs to operate wastewater, biosolids or other systems outside of drinking water.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell Q77."
+CD_CUST_RET_UNIT_COST_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered"
+CD_CUST_RET_UNIT_COST,numeric,The Customer Retail Unit Charge represents the volumetric portion of the total charges that customers pay for water service.,"Definition: The Customer Retail Unit Charge represents the volumetric portion of the total charges that customers pay for water service. The CRUC does not include fixed charges. This unit charge cost is applied routinely to the components of Apparent Loss, since these losses represent water reaching customers but not (fully) paid for. Since most water utilities have a rate structure that includes a variety of different charges costs based upon class of customer, a volume- weighted average of water sold at each unique rate should be calculated to determine a single composite charge that should be entered into this cell. Finally, the weighted average charge should also include additional charges for sewer, storm water or biosolids processing, but only if these charges are based upon the volume of potable water consumed. For water utilities in regions with limited water resources and a questionable ability to meet the drinking water demands in the future, the Customer Retail Unit Charge Cost might also be applied to value the Real Losses; instead of applying the Variable Production Cost to Real Losses. In this way, it is assumed that every unit volume of leakage reduced by leakage management activities will be sold to a customer. Note: the Free Water Audit Software allows the user to select the units that are charged to customers (either $/1,000 gallons, $/hundred cubic feet, or $/1,000 litres) and automatically converts these units for purpose of calculating Apparent Loss valuations. The monetary units are United States dollars, $.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H76."
+CD_CUST_RET_UNIT_COST_UNITS,text,"User selects the units that are charged to customers (either $/1,000 gallons, $/hundred cubic feet, or $/1,000 litres)","Definition: The Free Water Audit Software allows the user to select the units that are charged to customers (either $/1,000 gallons, $/hundred cubic feet, or $/1,000 litres) and automatically converts these units for purpose of calculating Apparent Loss valuations. The monetary units are United States dollars, $.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell J76."
+CD_VARIABLE_PROD_COST_COMMENT,numeric,This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered ,"Definition: This value is not the actual comment on the Interactive Data Grading worksheet but is the Grade entered The comment is not part of this database but can be found in the FWAS audit excel file submitted to CA DWR. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Interactive Data Grading', Cell D470"
+CD_VARIABLE_PROD_COST,numeric,"The cost to produce and supply the next unit of water (e.g., $/million gallons).","Definition: The cost to produce and supply the next unit of water (e.g., $/million gallons). This cost can include both short-run and long-run marginal costs. See the VPC data grading questions on IDG tab for examples of short-run and long-run marginal costs that may be included. It is common to apply the VPC unit cost to the volume of Real Losses. However, if water resources are strained and the ability to meet future drinking water demands is in question, then the water auditor may be justified in applying the Customer Retail Unit Charge to the Real Loss volume, rather than applying the Variable Production Cost.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H77."
+WATER_AUDIT_VALIDITY_SCORE,numeric,The water audit data validity score (0 to 100: quantifies the level of data uncertainty),"Definition: The water audit data validity score (0 to 100: quantifies the level of data uncertainty). This is a composite score that reflects the quality of the data entered into the audit, as determined by your self reported data validity scores for individual fields. The score is a volumetrically weighted average, in which a lower score reflects less confidence in the accuracy of data, and a higher score reflects greater confidence. The AWWA software offers general water loss control guidance on the worksheet titled Loss Control Planning based on the results of the Data Validity Score
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell J7."
+PRIORITY_AREA_1,text,Prioirity Area 1. Three Priority areas for attention are also displayed by the Audit Software to guide the user to the most important areas needing data validity improvement. ,"Definition: Priority Area 1: The audit software identifies priorities areas for data validity improvement based on the data validity scores entered when completing the audit. These suggestions offer opportunities to improve the overall data validity score and the reliability of the performance indicators produced by the audit. It is important to note that improvement of these priority areas will result in higher data validity, but not necessarily improved system performance in managing water losses.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell C89."
+PRIORITY_AREA_2,text,Prioirity Area 2. Three Priority areas for attention are also displayed by the Audit Software to guide the user to the most important areas needing data validity improvement. ,"Definition: Priority Area 2: The audit software identifies priorities areas for data validity improvement based on the data validity scores entered when completing the audit. These suggestions offer opportunities to improve the overall data validity score and the reliability of the performance indicators produced by the audit. It is important to note that improvement of these priority areas will result in higher data validity, but not necessarily improved system performance in managing water losses.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell C90."
+PRIORITY_AREA_3,text,Prioirity Area 3. Three Priority areas for attention are also displayed by the Audit Software to guide the user to the most important areas needing data validity improvement. ,"Definition: Priority Area 3: The audit software identifies priorities areas for data validity improvement based on the data validity scores entered when completing the audit. These suggestions offer opportunities to improve the overall data validity score and the reliability of the performance indicators produced by the audit. It is important to note that improvement of these priority areas will result in higher data validity, but not necessarily improved system performance in managing water losses.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell C91."
+SA_APPARENT_LOSSES_VOL,numeric,Apparent loss volume calculated from systematic data handling errors + customer metering inaccuracies + unauthorized consumption,"Definition: Apparent losses calculated from systematic data handling errors + customer metering inaccuracies + unauthorized consumption. Apparent Losses include all types of inaccuracies associated with customer metering (worn meters as well as improperly sized meters or wrong type of meter for the water usage profile) as well as systematic data handling errors (meter reading, billing, archiving and reporting), plus unauthorized consumption (theft or illegal use). NOTE: Over-estimation of Apparent Losses results in under-estimation of Real Losses. Under-estimation of Apparent Losses results in over-estimation of Real Losses.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H46."
+SA_REAL_LOSSES_VOL,numeric,The Audit Software mathematically calculates Real Losses simply as total water losses minus apparent losses,"Definition: The Audit Software mathematically calculates Real Losses simply as total water losses minus apparent losses. These are Physical water losses from the pressurized system (water mains and customer service connections) and the utility's storage tanks, up to the point of customer consumption. In metered systems this is the customer meter, in unmetered situations this is the first point of consumption (stop tap/tap) within the property.
+The annual volume lost through all types of leaks, breaks and overflows depends on frequencies, flow rates, and average duration of individual leaks, breaks and overflows.
+
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H51."
+SA_WATER_LOSSES_VOL,numeric,Water Losses are the difference between Water Supplied and Authorized Consumption. ,"Definition: Water Losses calculated as Apparent Losses plus Real Losses or ""=Water Supplied minus Authorized Consumption"". Water Losses are The difference between water supplied and authorized Consumption. water Losses can be considered as a total volume for The whole system, or for partial systems such as transmission systems, pressure zones or district metered areas (DMA), if one of these configurations are The basis of The water audit.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Worksheet', Cell H53."
+SA_UNAVOID_ANN_REAL_LOSSES_VOL,numeric,"Unavoidable Annual Real Losses (UARL) is a theoretical reference value representing the technical low limit of leakage for well managed systems in good condition, with aggressive active leakage control. ","Definition: Unavoidable Annual Real Losses (UARL) is a theoretical reference value representing the technical low limit of leakage for well managed systems in good condition, with aggressive active leakage control. It is a key variable in the calculation of the Infrastructure Leakage Index (ILI). UARL (gallons) = (5.41Lm + 0.15Nc + 7.5Lc) x P x 365 d/year, or UARL (litres) = (18.0Lm + 0.8Nc + 25.0Lc) x P x 365 d/year where:
+Lm = length of mains (miles or kilometres)
+Nc = number of customer service connections
+Lp = the average length of customer service connection piping (feet or metres)
+(see the Worksheet ""Service Connection Diagram"" for guidance on deterring the value of Lp) Lc = total length of customer service connection piping (miles or km)
+Lc = Nc X Lp (miles or kilometres)
+P = Average operating pressure (psi or metres) (see Average Operating Pressure definition)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell AK43."
+SA_APPARENT_LOSSES_ANN_COST,numeric,Value of Apparent Losses in $/Year,"Definition: Value of Apparent Losses in $/Year. Apparent losses are valued at the customer retail cost, as water lost at the customer endpoint means uncaptured revenue at the retail rate.Use: Assess cost loss level. Principal users: Utilities, Regulators
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell N49."
+SA_REAL_LOSSES_ANN_COST,numeric,Value of Real Losses in $/Year,"Definition: Value of Real Losses in $/Year. Use: Assess loss level. Princicpal users: Utilities, Regulators
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell N49."
+SA_ANNUAL_COST_VALUED_AT,text,Real Losses Annual Cost Basis of Valuation,"Definition: Real Losses Annual Cost Basis of Valuation
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell R50."
+PI_FI_NON_REV_PERCENT_BY_VOL,numeric,Volume of Non Revenue Water  as a percentage of system input volume. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: Volume of Non Revenue Water  as a percentage of system input volume. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Not present in v6.  Can be calculated as Worksheet!H57/Worksheet!H19"
+PI_FI_NON_REV_PERCENT_BY_COST,numeric,Volume of Non Revenue Water as a percentage of annual cost of running the system. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: Volume of Non Revenue Water as a percentage of annual cost of running the system. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Not present in v6.  Can be calculated as Dashboard!N52/Worksheet!Q77"
+PI_OE_APPARENT_LOSSES_GCD,numeric,Performance indicator: apparent losses in gallons per connection per day . One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: Performance Indicator: Basic but meaningful performance indicator for apparent losses. Easy to calculate once apparent losses are quantified. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell AK29."
+PI_OE_REAL_LOSSES_GCD,numeric,Performance indicator: real losses in gallons per connection per day (for agencies with greater than 30 connections per mile). One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: IWA/AWWA M36 v4: Best of the simple traditional performance indicators; useful for target-setting; limited use for comparisons between systems.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell AU29."
+PI_OE_REAL_LOSSES_GMD,numeric,Performance indicator: real losses in gallons per mile of water main per day (for agencies with less than 30 connections per mile). One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: The UARL calculation is not valid for small systems that meet the following condition:
+in gallons per day: (Lm × 32) + Nc < 3,000 or P < 35 psi
+in litres per day: (Lm × 20) + Nc < 3,000 or P < 25 m
+Systems at or below these levels can rely on the Real Losses performance indicator, in gallons per mile of main per day, as a measure of their real loss standing.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell AS41."
+PI_OE_REAL_LOSSES_GCD_PSI,numeric,This performance indicator is calculated by dividing Real Losses by the average system pressure. Easy to calculate this indicator if the Infrastructure Leakage Index (ILI) is not yet known; useful for comparisons between systems. Not in v6. ,"Definition: This performance indicator is calculated by dividing Real Losses by the average system pressure. Easy to calculate this indicator if the Infrastructure Leakage Index (ILI) is not yet known; useful for comparisons between systems. Not in v6. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Not present in v6.  Can be calculated as Dashboard!AU29/Dashboard!X32"
+PI_CURRENT_ANN_REAL_LOSSES_VOL,numeric,Estimated real water losses.One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators. ,"Definition: Estimated real water losses.One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell I50."
+PI_INFRASTRUCT_LEAKAGE_INDEX,numeric,The ratio of the Current Annual Real Losses (Real Losses) to the Unavoidable Annual Real Losses (UARL). This performance indicator is dimensionless. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators,"Definition: The ratio of the Current Annual Real Losses (Real Losses) to the Unavoidable Annual Real Losses (UARL). This performance indicator is dimensionless. One of 8 indicators as the recommended suite per the AWWA Water Loss Control Committee 2020 Position on Key Performance Indicators. NOTES ON THE UARL AND ILI:1. This Free Water Audit Software version 6 presents the calculated UARL and ILI for systems of all sizes and all pressures. Some published research is now available on predicting how UARL is likely to be modified when modeling low leakage limits in systems that are very small (< 3000 conn), or have very low average pressures, or have very high pressures (aka boundary cases). Inherent over- or under- estimation of UARL volume may exist in these boundary cases, as they operate at or near the limits of the UARL model assumptions. More widespread application and understanding of system specific corrections to the UARL model in these boundary cases is now likely to occur, but are not included in the FWAS at the time of this publication. Caution is advised when using the standard UARL modeled value (and subsequently the ILI) for boundary cases. In boundary cases, the ILI may still be considered a general Performance Indicator, but not used as an absolute performance measurement or for benchmark comparisons. 2. The UARL term is based on average operating pressure in a given audit year, and a utility's current pressure conditions may not be optimized. Thus, ILI should always be interpreted with some measure of pressure, and only used for tracking progress if all justifiable pressure management has already been completed.
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: AWWA FWAS V6 tab 'Dashboard', Cell AH41."
+WS_UNITS_SHORT,text,DWR's Programming Consultant tracking field  . Same as field VOLUME_REPORTING_UNITS but in short form,"Definition: DWR's Programming Consultant tracking field  . Same as field VOLUME_REPORTING_UNITS but in short form
+
+Source: CA Department of Water Resources
+
+Additional Notes: Million gallons (US)= MG/Yr"
+UPLOAD_VERSION,text,This variable tracks the version of the AWWA FWAS submitted to CA DWR.,"Definition: This variable tracks the version of the AWWA FWAS submitted to CA DWR.
+
+Source: CA Department of Water Resources
+
+Additional Notes: Field to track the FWAS version for CA water submissions to DWR."
+WATER_SYSTEM_STRUCTURE,text,"Water System Structure Type: Retail, Wholesale, Hybrid Wholesale + Retail, Other","Definition: Water System Structure Type: Retail, Wholesale, Hybrid Wholesale + Retail, Other (Extra cell not in use as of March 2025). 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Added field to FWAS v6 Start Page. Water System Structure: Retail, Wholesale, Hybrid Wholesale + Retail, or Other (and extra cell (Cell AG23) allows user to write in but WUE database does not track that field as of March 19, 2025)"
+WATER_TYPE,text,"Type of Water (Potable, Raw Water, Recycled Water or Other)","Definition: Type of Water (Potable, Raw Water, Recycled Water or Other)
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: FWAS v6 added field on Start Page AB24"
+VALIDATOR_NAME_ID,text,Validator Name/ID. Added field to FWAS v6 Start Page ,"Definition: Validator Name/ID. Added field to FWAS v6 Start Page 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: FWAS v6 Start Page Cell AB26"
+VALIDATOR_EMAIL,text,Validator Email address. Added field to FWAS v6 Start Page ,"Definition: Validator Email address. Added field to FWAS v6 Start Page 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: FWAS v6 Start Page Cell AB27"
+EST_POP_SERVED,numeric,Estimated Population Served,"Definition: Estimated Population Served. 
+
+Source: American Water Works Association FWAS audit
+
+Additional Notes: Added field to FWAS v6 Start Page Cell AI28"
+LATEST_STATUS,text,CA DWR's Programming Consultant tracking field,"Definition: DWR's Programming Consultant tracking field.Status of each annual water loss audit report submitted to  CA DWR. The ""report"" refers to the AWWA FWAS audit (v5 or v6) AND the CA DWR validator AND utility certification statements required by the California Water Code.
+
+Source: CA Department of Water Resources
+
+Additional Notes:"
+DISCRETE_DIST_NUMBER,numeric,Number of Discrete Distribution Systems associated with the PWSID. ,"Definition: Number of discrete distribution systems associated with the unique PWSID as of report submission date. Sometimes more than 1 distribution system is associated with a PWSID. 
+
+ Source: CA Department of Water Resources
+
+Additional Notes: This is a placeholder field to track future data."
+DIST_SYS_NOTES,text,Note field to accompany DISCRETE_DIST_NUMBER (Number of discrete distribution systems associated with the unique PWSID as of report submission date),"Definition: Number of discrete distribution systems associated with the unique PWSID as of report submission date. Sometimes more than 1 distribution system is associated with a PWSID. 
+
+ Source: CA Department of Water Resources
+
+Additional Notes: This is a placeholder field to track future data."
+STEPS_YR_AFTER_NOTES,text,Steps Taken the Year After Audit Data Year,"Definition: Information identifying steps taken by the urban retail water supplier to increase the validity of data entered into the final audit, reduce the volume of apparent losses, and reduce the volume of real losses, as informed by the annual validated water audit.
+ 
+Source: CA Department of Water Resources
+
+Additional Notes:  This information is required  as required by CA Water Code of Regulations CCR Section 638.5. Audit Reporting for the past 3 years."
+STEPS_AFTER_YR,numeric,Year associated with STEPS_YR_AFTER_NOTES,"Definition: Year associated with STEPS_YR_AFTER_NOTES
+
+Source: CA Department of Water Resources
+
+Additional Notes:  "
+STEPS_YR_DURING_NOTES,text,Steps Taken During the Audit Data Year,"Definition: Information identifying steps taken by the urban retail water supplier to increase the validity of data entered into the final audit, reduce the volume of apparent losses, and reduce the volume of real losses, as informed by the annual validated water audit.
+ 
+Source: CA Department of Water Resources
+
+Additional Notes:  This information is required  as required by CA Water Code of Regulations CCR Section 638.5. Audit Reporting for the past 3 years."
+STEPS_YR_DURING,numeric,Year associated with STEPS_YR_DURING_NOTES,"Definition: Year associated with STEPS_YR_DURING_NOTES
+
+Source: CA Department of Water Resources
+
+Additional Notes:  "
+STEPS_YR_DURING_NOTES.1,text,Steps Taken the Year Before Audit Data Year,"Definition: Information identifying steps taken by the urban retail water supplier to increase the validity of data entered into the final audit, reduce the volume of apparent losses, and reduce the volume of real losses, as informed by the annual validated water audit.
+ 
+Source: CA Department of Water Resources
+
+Additional Notes:  This information is required  as required by CA Water Code of Regulations CCR Section 638.5. Audit Reporting for the past 3 years."
+STEPS_YR_DURING.1,numeric,Year associated with STEPS_YR_DURING_NOTES.1,"Definition: Year associated with STEPS_YR_DURING_NOTES.1
+
+Source: CA Department of Water Resources
+
+Additional Notes:  "

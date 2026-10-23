@@ -1,0 +1,48 @@
+{
+  "task": "Retrospective next-year real water loss regression",
+  "features": [
+    "water_supplied_af_t",
+    "real_losses_af_t",
+    "apparent_losses_af_t",
+    "non_revenue_water_af_t",
+    "service_connections_t",
+    "mains_miles_t",
+    "real_loss_share_pct_t",
+    "real_loss_af_per_connection_t"
+  ],
+  "target": "target_real_losses_af",
+  "target_unit": "acre-feet",
+  "baseline_feature": "real_losses_af_t",
+  "entity_key": "system_key",
+  "train_target_years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "validation_target_years": [
+    2022,
+    2023
+  ],
+  "test_target_years": [
+    2024
+  ],
+  "input_file": "data/processed/water_loss_analysis.csv",
+  "input_sha256": "48af821addc04623df62602255922949a471708a6e13e6492a0bd04affc189e3",
+  "samples": {
+    "train": 1850,
+    "validation": 737,
+    "test": 307
+  },
+  "primary_metric": "MAE in acre-feet",
+  "secondary_metric": "RMSE in acre-feet",
+  "publication_timing_verified": false,
+  "limitations": [
+    "Current audit snapshot may include revisions unavailable historically.",
+    "Status-based selection uses current snapshot; results are conditional on cleaning eligibility.",
+    "Same system can appear across time splits; not a test solely of unseen systems.",
+    "Organization-system identifiers have not been externally reconciled.",
+    "Absolute-volume metrics may be driven by large systems; inspect errors by scale."
+  ]
+}

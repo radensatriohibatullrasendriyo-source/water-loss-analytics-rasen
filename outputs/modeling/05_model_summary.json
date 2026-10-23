@@ -1,0 +1,39 @@
+{
+  "selection": {
+    "selected_ml": "ridge_alpha_10",
+    "validation_preference": "ridge_alpha_10",
+    "selection_uses_test": false,
+    "selected_spec": {
+      "family": "Ridge",
+      "alpha": 10.0
+    },
+    "baseline_validation_mae_af": 163.18457654645258,
+    "selected_ml_validation_mae_af": 157.11939855491264
+  },
+  "test_year": 2024,
+  "test_samples": 307,
+  "baseline_test_mae_af": 142.5648473426846,
+  "selected_ml_test_mae_af": 149.03732245734165,
+  "test_mae_improvement_pct": -4.540021776265147,
+  "size_cutpoints_af": [
+    928.4024999999999,
+    3927.05,
+    10360.726112669
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "joblib": "1.4.2"
+  },
+  "ml_better_on_validation": true,
+  "ml_better_on_test": false,
+  "operational_readiness_established": false,
+  "input_hashes": {
+    "ml_config.json": "4ebc3d4784157c9b43562b6ed083fced44cf65a5c4dfc3d031877e9069a06f69",
+    "water_loss_test.csv": "315625196eb35827847b53da96b2d68d3f0cd0a454f467948895ee5fc611e18a",
+    "water_loss_train.csv": "c3d772c6e0072523af296cf6e358e11699e6856d1f5d4f3eb2caad4ca3e808c4",
+    "water_loss_validation.csv": "6e5763040d9382429fa46ed0dc6e60d55b4996edeb19818fdca147343c4d4856"
+  }
+}

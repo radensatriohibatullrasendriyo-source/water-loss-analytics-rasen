@@ -1,0 +1,14 @@
+﻿flag,row_count
+flag_nonstandard_system_id,16
+flag_numeric_adjustment,3
+flag_missing_identity,2
+flag_invalid_period,0
+flag_nonannual_duration,27
+flag_duplicate_key,0
+flag_missing_numeric,0
+flag_negative_volume,64
+flag_invalid_denominator,0
+flag_invalid_score,0
+flag_noninteger_connections,226
+flag_volume_above_supply,0
+flag_nrw_below_losses,0

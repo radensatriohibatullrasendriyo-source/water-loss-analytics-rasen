@@ -1,0 +1,9 @@
+﻿split,target_year,samples,systems
+test,2024,307,307
+train,2017,337,337
+train,2018,369,369
+train,2019,382,382
+train,2020,378,378
+train,2021,384,384
+validation,2022,370,370
+validation,2023,367,367

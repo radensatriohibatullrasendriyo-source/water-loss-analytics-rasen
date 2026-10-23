@@ -1,0 +1,11 @@
+{
+  "selected_ml": "ridge_alpha_10",
+  "validation_preference": "ridge_alpha_10",
+  "selection_uses_test": false,
+  "selected_spec": {
+    "family": "Ridge",
+    "alpha": 10.0
+  },
+  "baseline_validation_mae_af": 163.18457654645258,
+  "selected_ml_validation_mae_af": 157.11939855491264
+}

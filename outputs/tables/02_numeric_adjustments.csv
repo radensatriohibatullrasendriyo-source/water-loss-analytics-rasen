@@ -1,0 +1,4 @@
+﻿source_row,column,original_value,adjusted_value,reason
+77,real_losses_af,-1.73472347597681e-16,0.0,negative_within_numerical_tolerance
+78,real_losses_af,-2.94902990916057e-17,0.0,negative_within_numerical_tolerance
+79,real_losses_af,-1.58727198051878e-16,0.0,negative_within_numerical_tolerance

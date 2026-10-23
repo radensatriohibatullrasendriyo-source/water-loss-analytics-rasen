@@ -1,0 +1,28 @@
+{
+  "source_file": "ca-retailer-waterlossdata.csv",
+  "source_sha256": "3b617b0e13a4cc7182f082f5e63e8ecbe64715a6d67a6fbcb53001439f4867ea",
+  "pandas_version": "2.2.3",
+  "zero_tolerance_af": 1e-09,
+  "start_year": 2016,
+  "end_year": 2024,
+  "calendar_year_only": true,
+  "main_statuses": [
+    "Requirements Addressed",
+    "Preliminarily Approved"
+  ],
+  "source_rows": 4936,
+  "main_rows": 3507,
+  "numeric_adjustments": 3,
+  "quality_exclusion_flags": [
+    "flag_missing_identity",
+    "flag_invalid_period",
+    "flag_duplicate_key",
+    "flag_missing_numeric",
+    "flag_negative_volume",
+    "flag_invalid_denominator",
+    "flag_invalid_score",
+    "flag_volume_above_supply",
+    "flag_nrw_below_losses"
+  ],
+  "note": "Project analysis scope; not official certification of data accuracy."
+}
